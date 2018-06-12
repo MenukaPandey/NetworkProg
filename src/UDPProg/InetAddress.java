@@ -12,6 +12,7 @@ public class InetAddress {
             System.out.println("Ip Address: "+ip.getHostAddress());
         }catch (UnknownHostException e){
             e.printStackTrace();
+
         }
 
     }
