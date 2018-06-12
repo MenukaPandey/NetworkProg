@@ -21,7 +21,7 @@ public class UDPServer {
             String message=new String(buffer,0,incomePacket.getLength());
             System.out.println("Server Received: "+message);
 
-            String reply=message+"is sent to server";
+            String reply=message+" is sent to server";
             byte[] replybytes=reply.getBytes();
             DatagramPacket replyPacket=new DatagramPacket(replybytes, replybytes.length,clientAddress,clientPrt);
             socket.send(replyPacket);
